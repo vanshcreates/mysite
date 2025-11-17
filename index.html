@@ -4,17 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VanshCreates – UI/UX Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
+  <header class="header" data-anim="fade-down">
     <div class="container">
-      <h1 class="logo">VanshCreates</h1>
+      <h1 class="logo">Vansh<b class="highlight">Creates</b></h1>
       <nav>
-        <ul class="nav-links">
+        <ul class="nav-links"  >
+          <li><a href="#about"><b>Home</b></a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#workflow">Workflow</a></li>
@@ -22,51 +24,95 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-       <a href="#contact" class="btn-primary">Get Started</a>
+       <a href="#contact" class="btn-primary" >Get Started</a>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero" data-anim="fade-right">
+    
     <div class="container hero-content">
-      <div class="hero-text">
-        <p class="intro">Hi there</p>
+      <div class="hero-image"  >
+        <img src="work.jpg" alt="Vansh at desk" />
+      </div>
+      <div class="hero-text" >
+        <p class="intro">Hi there!</p>
         <h2><span class="bold">VANSH</span><span class="highlight">CREATES</span></h2>
         <h3>UI/UX Designer & Visual Thinker</h3>
-        <p>A passionate UI/UX Designer crafting seamless digital experiences. I help create interfaces that are both functional and beautiful.</p>
-        <a href="#projects" class="btn-secondary">View Work</a>
-      </div>
-      <div class="hero-image">
-        <img src="hero.jpg" alt="Vansh at desk" />
+      <hr>
+        <p class="description">A passionate UI/UX Designer crafting seamless digital experiences.  I design user-first interfaces that blend functionality with elegance, helping brands stand out and connect with their own audience.</p>
+        <a href="#projects" class="btn-secondary" >View Work →</a>
       </div>
     </div>
   </section>
 
   <!-- About Me -->
-  <section id="about" class="about-me">
-    <div class="container">
-      <div class="about-content">
-        <div class="about-text">
-          <h2>About Me</h2>
-          <p>Hi, I'm Vansh Gupta, a passionate UI/UX designer based in India . I specialize in creating intuitive, engaging, and user-friendly digital experiences.</p>
-          <p><strong>Languages:</strong> English, Hindi</p>
-          <a href="#contact" class="btn-secondary">Contact Me</a>
+  <section id="about" data-anim="fade-left" >
+    <div class="container about">
+      <div class="hero-content">
+        <div class="hero-text">
+           <h2><span class="bold">About Me</span></h2>
+          <p class="description">Hi, I'm Vansh Gupta, a passionate UI/UX designer based in India . I specialize in creating intuitive, engaging, and user-friendly digital experiences.</p>
+          <p class="description"><strong>Languages:</strong> English, Hindi</p>
+          <a href="#contact" class="btn-secondary" data-anim="fade-up">Contact Me</a>
         </div>
         <div class="about-image">
-          <img src="about-image.jpg" alt="Notebooks and sketching" />
+          <img src="design.jpg" alt="Notebooks and sketching" />
         </div>
       </div>
     </div>
   </section>
 
+  <!--my design journey-->
+  <section class="design-journey">
+  <div class="container" data-anim="fade-center" style="animation-delay: 0.6s;">
+    <h2>My Design Journey</h2>
+    <p>
+      "I started my journey as a self-taught designer, exploring the world of design through curiosity and consistent practice.
+      From small personal projects to app redesigns, I’ve been obsessed with how design can improve real-life experiences
+      and make products more usable."
+    </p>
+    <p>
+      "I believe great design isn’t just about pixels—it’s about understanding users, solving their pain points,
+      and crafting seamless flows that feel effortless. I love working on projects that challenge me creatively
+      and push me to grow."
+    </p>
+  </div>
+</section>
+<!-- tools used -->
+<section class="tools-used" >
+  <div class="container" data-anim="fade-center" style="animation-delay: 1s;">
+    <h2>Tools I Use</h2>
+    <div class="tools-logos">
+      <div class="tool">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+        <p>Figma</p>
+      </div>
+      <div class="tool">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator">
+        <p>Illustrator</p>
+      </div>
+      <div class="tool">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop">
+        <p>Photoshop</p>
+      </div>
+      <div class="tool">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/canva-app.png" alt="Canva">
+        <p>Canva</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
   <!-- Projects Section -->
-<section id="projects" class="projects">
+<section id="projects" class="projects" data-anim="fade-up">
   <h2>Projects</h2>
 
   <!-- Project 1 -->
   <div class="project-card">
     <div class="project-image">
-      <img src="project1.jpg" alt="NutriTrack App" />
+      <img src="health.png" alt="NutriTrack App" />
     </div>
     <div class="project-text">
       <h3><span class="proj-title">NutriTrack</span> – Healthy Eating App</h3>
@@ -80,7 +126,7 @@
   <!-- Project 2 -->
   <div class="project-card">
     <div class="project-image">
-      <img src="project2.jpg" alt="ShopNest App" />
+      <img src="ecomm.jpg" alt="ShopNest App" />
     </div>
     <div class="project-text">
       <h3><span class="proj-title">ShopNest</span> – E-commerce App</h3>
@@ -94,7 +140,7 @@
   <!-- Project 3 -->
   <div class="project-card">
     <div class="project-image">
-      <img src="project3.jpg" alt="BusBuddy App" />
+      <img src="mybus.webp" alt="BusBuddy App" />
     </div>
     <div class="project-text">
       <h3><span class="proj-title">BusBuddy</span> – City Transit App</h3>
@@ -110,47 +156,47 @@
 <section id="workflow" class="workflow">
   <h2>Design <span class="highlight-text">Workflow</span></h2>
   <div class="steps">
-    <div class="step left">01 <span>Understand</span></div>
-    <div class="step right">02 <span>Research</span></div>
-    <div class="step left">03 <span>Wireframing</span></div>
-    <div class="step right">04 <span class="blue">UI Design</span></div>
-    <div class="step left">05 <span class="purple">ProtoTyping</span></div>
-    <div class="step right">06 <span>Testing</span></div>
-    <div class="step center">07 <span>Deliver</span></div>
+    <div class="step left first" data-anim="left">01 <span>Understand</span></div>
+    <div class="step right two" data-anim="left"><span>Research </span> 02</div>
+    <div class="step left three" data-anim="left">03 <span>Wireframing</span></div>
+    <div class="step right four" data-anim="left"><span >UI Design </span> 04</div>
+    <div class="step left five" data-anim="right">05 <span >ProtoTyping</span></div>
+    <div class="step right six" data-anim="right"><span>Testing </span> 06</div>
+    <div class="step left seven" data-anim="right">07 <span>Delivery</span></div>
   </div>
 </section>
 
 
 <!-- Testimonials Section -->
-<section id="testimonials" class="testimonials">
+<section id="testimonials" class="testimonials" >
   <h2>Testimonials</h2>
-  <div class="testimonial-grid">
+  <div class="testimonial-grid" data-anim="fade-up">
 
     <!-- Card 1 -->
     <div class="testimonial-card">
       <img src="client1.png" alt="Client 1" />
-      <h3>William James</h3>
-      <p class="title">CEO, BrandWorks</p>
       <div class="stars">★★★★★</div>
-      <p class="feedback">Working with Vansh was a seamless experience. His eye for detail and clarity in design helped elevate our product's user experience immensely.</p>
+      <p class="feedback">“Working with Vansh was a smooth and professional experience. He understood our goals and delivered user-friendly designs that helped us increase engagement.”</p>
+      <h3>- William James</h3>
+      <p class="title">CEO, BrandWorks</p>
     </div>
 
     <!-- Card 2 -->
     <div class="testimonial-card">
       <img src="client2.png" alt="Client 2" />
-      <h3>Angel Nick</h3>
-      <p class="title">UI/UX Lead</p>
       <div class="stars">★★★★★</div>
-      <p class="feedback">Vansh brings clarity and calmness to every project. He combines creative UI work with thoughtful UX decisions that impress stakeholders.</p>
+      <p class="feedback">“Vansh has a great eye for UI detail and a strong design process and its our pleasure to work with him.. He’s quick to learn, open to feedback, and always focused on users.”</p>
+      <h3>-Angel Nicames</h3>
+      <p class="title">UI/UX design Lead</p>
     </div>
 
     <!-- Card 3 -->
     <div class="testimonial-card">
       <img src="client3.png" alt="Client 3" />
-      <h3>Michael Nardo</h3>
-      <p class="title">Lead Dev, SnapSoft</p>
       <div class="stars">★★★★★</div>
-      <p class="feedback">His clean design systems and design handoffs made development a breeze. Highly recommended for any serious product team!</p>
+      <p class="feedback">“It was a pleasure working with Vansh on our design sprint and its our pleasure to work with him. His creativity and problem-solving mindset made a huge difference to the final outcome.”</p>
+      <h3>- Michael Nardo</h3>
+      <p class="title">Lead Dev, SnapSoft</p>
     </div>
 
   </div>
@@ -160,17 +206,17 @@
 <section id="contact" class="connect">
   <h2>Let’s Connect</h2>
   <p>Follow my journey, see more work, or just say hi.</p>
-  <div class="social-icons">
+  <div class="social-icons wrap">
     <a href="https://linkedin.com" target="_blank"><img src="linkedin.png" alt="LinkedIn" /></a>
     <a href="https://behance.net" target="_blank"><img src="behance.png" alt="Behance" /></a>
     <a href="https://instagram.com" target="_blank"><img src="insta.png" alt="Instagram" /></a>
-    <a href="mailto:vanshgupta.dev@gmail.com"><img src="email.png" alt="Email" /></a>
+    <a href="mailto:vanshgupta.dev@gmail.com" target="_blank"><img src="email.jpg" alt="Email" /></a>
   </div>
 </section>
 
 
 <!-- Footer Section -->
-<footer class="footer">
+<footer class="footer" >
   <div class="footer-container">
     <div class="footer-brand">
       <h3>VanshCreates</h3>
@@ -205,7 +251,7 @@
         <a href="#"><img src="linkedin.png" alt="LinkedIn" /></a>
         <a href="#"><img src="behance.png" alt="Behance" /></a>
         <a href="#"><img src="insta.png" alt="Instagram" /></a>
-        <a href="#"><img src="email.png" alt="Email" /></a>
+        <a href="#"><img src="email.jpg" alt="Email" /></a>
       </div>
     </div>
   </div>
@@ -215,7 +261,8 @@
   </div>
 </footer>
 
+<script src="script.js">
+</script>
 
 </body>
 </html>
-
